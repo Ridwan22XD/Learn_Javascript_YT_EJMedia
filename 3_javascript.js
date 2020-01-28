@@ -88,3 +88,26 @@
 // {
 //     document.write("Looping ",i,"<br>");
 // }
+
+
+
+// // Function and Condition 
+// function battle(player,health)
+// {
+//     // Condition when health(1 - 10)
+//     if(health <= 10 && health > 0)
+//     {
+//         document.write(player + " Using Skill");
+//     }
+//     // Condition when health(upper than 10)
+//     else if(health > 10)
+//     {
+//         document.write(player + " Using basic attack");
+//     }
+//     // when if and if else didn't needed
+//     else
+//     {
+//         document.write(player + " Dead");
+//     }
+// }
+// battle("Steve", 0);
