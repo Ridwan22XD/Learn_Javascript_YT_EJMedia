@@ -60,14 +60,31 @@
 //     " Number5 + Number6 * Number7 = ",number5+number6*number7,"<br>");
 
 
-// Simple Condition 
-var food = "Mango"
+// // Simple Condition 
+// var food = "Mango"
 
-if(food == "Apple")
-{
-    alert("You have apple");
-}
-else
-{
-    alert("You didn't have apple");
-}
+// if(food == "Apple")
+// {
+//     alert("You have apple");
+// }
+// else
+// {
+//     alert("You didn't have apple");
+// }
+
+
+// // Looping --> while 
+// var i = 1;
+
+// while(i < 5)
+// {
+//     document.write("Looping ",i,"<br>");
+//     i++;
+// }
+
+
+// // Looping --> for
+// for( var i = 1; i < 6; i++)
+// {
+//     document.write("Looping ",i,"<br>");
+// }
