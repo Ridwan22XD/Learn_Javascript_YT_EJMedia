@@ -135,16 +135,37 @@
 
 
 
-// Array
-// index begin from 0 
-var roads = ["Lone", "Gone", "Away", "Go"];
+// // Array
+// // index begin from 0 
+// var roads = ["Lone", "Gone", "Away", "Go"];
 
-// call array roads index 1 --> Gone 
-document.write(roads[1]);
+// // call array roads index 1 --> Gone 
+// document.write(roads[1]);
 
-// replace index 1 with value --> Far 
-roads[1] = "Far";
+// // replace index 1 with value --> Far 
+// roads[1] = "Far";
 
-// print array roads index 1 (new)
-document.write("<br>","<br>",roads[1]);
+// // print array roads index 1 (new)
+// document.write("<br>","<br>",roads[1]);
 
+
+
+
+// Object 
+// Real object have multiple property
+var orc = 
+{
+    // Variabel inside object are called --> property
+    color: "green",
+    height: 5,
+    weight: 180,
+
+    // Function inside object are called --> method 
+    yell: function() // function yell ()
+    {
+        document.write("Function inside object");
+    }
+}
+// use . to access an object's property 
+document.write(orc.height,"<br>");
+orc.yell();
