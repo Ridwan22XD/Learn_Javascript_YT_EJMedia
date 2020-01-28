@@ -1,0 +1,1 @@
+document.write("Now we using external file .js");
