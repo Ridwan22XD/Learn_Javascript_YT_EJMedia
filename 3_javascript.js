@@ -151,31 +151,57 @@
 
 
 
-// Object 
-// Real object have multiple property
-var orc = 
-{
-    // Variabel inside object are called --> property
-    color: "green",
-    height: 5,
-    weight: 180,
+// // Object 
+// // Real object have multiple property
+// var orc = 
+// {
+//     // Variabel inside object are called --> property
+//     color: "green",
+//     height: 5,
+//     weight: 180,
 
-    // Function inside object are called --> method 
-    yell: function() // function yell ()
-    {
-        document.write("Function inside object");
-    }
-}
-// use . to access an object's property 
-document.write(orc.height,"<br>");          //Function inside object
-orc.yell();
-// replace value object property orc.color (Green --> Red)
-orc.color = "Red";
-// print orc.color 
-document.write("<br>",orc.color,"<br>");    //Red
-// delete value object property orc.height
-delete orc.height 
-// print orc.height
-document.write(orc.height,"<br>");          //undifined
+//     // Function inside object are called --> method 
+//     yell: function() // function yell ()
+//     {
+//         document.write("Function inside object");
+//     }
+// }
+// // use . to access an object's property 
+// document.write(orc.height,"<br>");          //Function inside object
+// orc.yell();
+// // replace value object property orc.color (Green --> Red)
+// orc.color = "Red";
+// // print orc.color 
+// document.write("<br>",orc.color,"<br>");    //Red
+// // delete value object property orc.height
+// delete orc.height 
+// // print orc.height
+// document.write(orc.height,"<br>");          //undifined
 
 
+
+// // String
+
+// var hello = "This is a string";
+// // uppercase method
+// hello = hello.toUpperCase(); //THIS IS A STRING
+// // print variabel hello 
+// document.write(hello,"<br>");
+
+// hello = "This is a string";
+// //lowercase method
+// hello = hello.toLowerCase(); //this is a string
+// // print variabel hello 
+// document.write(hello,"<br>");
+
+// hello = "This is a string";
+// //bold method
+// hello = hello.bold();        //This is a string --> bold
+// // print variabel hello 
+// document.write(hello,"<br>");
+
+// hello = "This is a string";
+// // specify the text where index 6
+// hello = hello.charAt(6);     //s  --> 0=T, 1=h, 2=i, 3=s, etc....
+// // print variabel hello 
+// document.write(hello,"<br>");
