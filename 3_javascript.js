@@ -113,11 +113,22 @@
 // battle("Steve", 0);
 
 
-// Return Statement 
-function add(a, b)
+// // Return Statement 
+// function add(a, b)
+// {
+//     result = a + b;
+//     return result;
+// }
+// var theresult = add(6, 7);
+// document.write(theresult);
+
+
+// Global and Local Variabel
+var name1 = "Loda";     // Global variabel 
+function callName()
 {
-    result = a + b;
-    return result;
+    var name2 = "Admiral";  // Local Variabel 
+    name3 = "Artezy";       // Global Variabel when u call function before print value
 }
-var theresult = add(6, 7);
-document.write(theresult);
+callName();
+document.write(name3);
