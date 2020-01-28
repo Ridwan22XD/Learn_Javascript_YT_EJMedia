@@ -167,5 +167,15 @@ var orc =
     }
 }
 // use . to access an object's property 
-document.write(orc.height,"<br>");
+document.write(orc.height,"<br>");          //Function inside object
 orc.yell();
+// replace value object property orc.color (Green --> Red)
+orc.color = "Red";
+// print orc.color 
+document.write("<br>",orc.color,"<br>");    //Red
+// delete value object property orc.height
+delete orc.height 
+// print orc.height
+document.write(orc.height,"<br>");          //undifined
+
+
