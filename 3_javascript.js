@@ -111,3 +111,13 @@
 //     }
 // }
 // battle("Steve", 0);
+
+
+// Return Statement 
+function add(a, b)
+{
+    result = a + b;
+    return result;
+}
+var theresult = add(6, 7);
+document.write(theresult);
