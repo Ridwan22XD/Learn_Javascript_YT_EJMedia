@@ -123,12 +123,28 @@
 // document.write(theresult);
 
 
-// Global and Local Variabel
-var name1 = "Loda";     // Global variabel 
-function callName()
-{
-    var name2 = "Admiral";  // Local Variabel 
-    name3 = "Artezy";       // Global Variabel when u call function before print value
-}
-callName();
-document.write(name3);
+// // Global and Local Variabel
+// var name1 = "Loda";     // Global variabel 
+// function callName()
+// {
+//     var name2 = "Admiral";  // Local Variabel 
+//     name3 = "Artezy";       // Global Variabel when u call function before print value
+// }
+// callName();
+// document.write(name3);
+
+
+
+// Array
+// index begin from 0 
+var roads = ["Lone", "Gone", "Away", "Go"];
+
+// call array roads index 1 --> Gone 
+document.write(roads[1]);
+
+// replace index 1 with value --> Far 
+roads[1] = "Far";
+
+// print array roads index 1 (new)
+document.write("<br>","<br>",roads[1]);
+
