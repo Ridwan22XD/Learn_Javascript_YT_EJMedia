@@ -356,15 +356,28 @@
 
 
 
-// Change image using javascripts function
-function changeStyle()
+// // Change image using javascripts function
+// function changeStyle()
+// {
+//     // Find Element where id = "image" and replace source = "images/MBP-Pink.jpeg"
+//     document.getElementById("image").src = "images/MBP-Pink.jpeg";
+// }
+
+// function reset()
+// {
+//     // Find Element where id = "image" and replace source = "images/MBP-Gold.jpeg"
+//     document.getElementById("image").src = "images/MBP-Gold.jpeg";
+// }
+
+
+
+
+// Mouseover
+function changeImage()
 {
-    // Find Element where id = "image" and replace source = "images/MBP-Pink.jpeg"
     document.getElementById("image").src = "images/MBP-Pink.jpeg";
 }
-
-function reset()
+function defaultImage()
 {
-    // Find Element where id = "image" and replace source = "images/MBP-Gold.jpeg"
     document.getElementById("image").src = "images/MBP-Gold.jpeg";
 }
