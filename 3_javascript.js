@@ -333,17 +333,38 @@
 
 
 
-// Add and merge using innerHtml
+// // Add and merge using innerHtml
+// function changeStyle()
+// {
+//     // call all paragraph are className = parag 
+//     var paragr = document.getElementsByClassName("parag");
+
+//     // inisialisation variabel to merge variabel
+//     var firstText = paragr[0].innerHTML;
+//     var secondText = paragr[1].innerHTML;
+
+//     // create place and field with merge variabel
+//     var merge = paragr[3].innerHTML = firstText + " " + secondText;
+
+//     // to set just print index 3
+//     paragr[0].innerHTML = " ";
+//     paragr[1].innerHTML = " ";
+//     paragr[2].innerHTML = " ";
+    
+// }
+
+
+
+
+// Change image using javascripts function
 function changeStyle()
 {
-    //     // call all paragraph are className = parag 
-    var paragr = document.getElementsByClassName("parag");
+    // Find Element where id = "image" and replace source = "images/MBP-Pink.jpeg"
+    document.getElementById("image").src = "images/MBP-Pink.jpeg";
+}
 
-    // inisialisation variabel to merge variabel
-    var firstText = paragr[0].innerHTML;
-    var secondText = paragr[1].innerHTML;
-
-    // create place and field with merge variabel
-    var merge = paragr[3].innerHTML = firstText + " " + secondText;
-    
+function reset()
+{
+    // Find Element where id = "image" and replace source = "images/MBP-Gold.jpeg"
+    document.getElementById("image").src = "images/MBP-Gold.jpeg";
 }
