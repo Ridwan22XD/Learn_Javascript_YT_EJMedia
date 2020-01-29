@@ -209,37 +209,57 @@
 
 
 
-// Math Object 
-var number = 7.8;
-var number1 = 7.4;
+// // Math Object 
+// var number = 7.8;
+// var number1 = 7.4;
 
-// Method to Math.round (if < 0.5 --> 0 and if >= 0.5 --> 1)
-numbera = Math.round(number);
-numberb = Math.round(number1);
+// // Method to Math.round (if < 0.5 --> 0 and if >= 0.5 --> 1)
+// numbera = Math.round(number);
+// numberb = Math.round(number1);
 
-// print
-document.write("Math.round","<br>");
-document.write("rounded ", number," --> ",numbera, "<br>");
-document.write("rounded ", number1," --> ",numberb, "<br>", "<br>");
+// // print
+// document.write("Math.round","<br>");
+// document.write("rounded ", number," --> ",numbera, "<br>");
+// document.write("rounded ", number1," --> ",numberb, "<br>", "<br>");
 
-number = 7.8;
-number1 = 7.4;
-// Method to Math.ceil (every desimal will be upper value)
-numbera = Math.ceil(number);
-numberb = Math.ceil(number1);
+// number = 7.8;
+// number1 = 7.4;
+// // Method to Math.ceil (every desimal will be upper value)
+// numbera = Math.ceil(number);
+// numberb = Math.ceil(number1);
 
-// print
-document.write("Math.ceil","<br>");
-document.write("ceil ", number," --> ",numbera, "<br>");
-document.write("ceil ", number1," --> ",numberb, "<br>", "<br>");
+// // print
+// document.write("Math.ceil","<br>");
+// document.write("ceil ", number," --> ",numbera, "<br>");
+// document.write("ceil ", number1," --> ",numberb, "<br>", "<br>");
 
-number = 7.8;
-number1 = 7.4;
-// Method to Math.floor (every desimal will be upper value)
-numbera = Math.floor(number);
-numberb = Math.floor(number1);
+// number = 7.8;
+// number1 = 7.4;
+// // Method to Math.floor (every desimal will be upper value)
+// numbera = Math.floor(number);
+// numberb = Math.floor(number1);
 
-// print
-document.write("Math.floor","<br>");
-document.write("floor ", number," --> ",numbera, "<br>");
-document.write("floor ", number1," --> ",numberb, "<br>");
+// // print
+// document.write("Math.floor","<br>");
+// document.write("floor ", number," --> ",numbera, "<br>");
+// document.write("floor ", number1," --> ",numberb, "<br>");
+
+
+
+
+// Date Object 
+// call date according your date with time and timezone
+var todayDate = new Date(); 
+document.write(todayDate,"<br>");   // Wed Jan 29 2020 09:46:06 GMT+0700 (Western Indonesia Time)
+
+// call date according your date without time and timezone
+var usingString = todayDate.toDateString();
+document.write(usingString,"<br>"); // Wed Jan 29 2020
+
+// just call year according your year
+var getFullYear = todayDate.getFullYear();
+document.write(getFullYear,"<br>"); // 2020
+
+// set year as you want
+todayDate.setYear(2012);
+document.write(todayDate);  // Sun Jan 29 2012 10:02:14 GMT+0700 (Western Indonesia Time)
