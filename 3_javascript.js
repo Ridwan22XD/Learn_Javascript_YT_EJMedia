@@ -318,14 +318,32 @@
 
 
 
-// Replace content using innerHtml
+// // Replace content using innerHtml
+// function changeStyle()
+// {
+//     // call all paragraph are className = parag 
+//     var paragraph = document.getElementsByClassName("parag");
+//     // Looping to create new paragraph 
+//     for(var i = 0; i < paragraph.length; i++)
+//     {
+//         var changeText = paragraph[i].innerHTML = "New paragraph " + (i+1);
+//     }
+// }
+
+
+
+
+// Add and merge using innerHtml
 function changeStyle()
 {
-    // call all paragraph are className = parag 
-    var paragraph = document.getElementsByClassName("parag");
-    // Looping to create new paragraph 
-    for(var i = 0; i < paragraph.length; i++)
-    {
-        var changeText = paragraph[i].innerHTML = "New paragraph " + (i+1);
-    }
+    //     // call all paragraph are className = parag 
+    var paragr = document.getElementsByClassName("parag");
+
+    // inisialisation variabel to merge variabel
+    var firstText = paragr[0].innerHTML;
+    var secondText = paragr[1].innerHTML;
+
+    // create place and field with merge variabel
+    var merge = paragr[3].innerHTML = firstText + " " + secondText;
+    
 }
