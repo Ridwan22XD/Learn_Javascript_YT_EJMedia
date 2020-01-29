@@ -269,12 +269,22 @@
 
 function changeStyle()
 {
-    // call element according id (paragraf-1) and styling color text (blue)
-    var text = document.getElementById("paragraf-1").style.color="Blue";
+    // call all paragraph (<p>)
+    var paragraph = document.getElementsByTagName("p");
+    for(var i = 0; i<paragraph.length; i++)
+    {
+        // style paragraph according index 
+        paragraph[i].style.color="Blue";
+    }
 }
 
 function reset()
 {
-    // call element according id (paragraf-1) and styling color text (black)
-    var text = document.getElementById("paragraf-1").style.color="black";
+    // call all paragraph (<p>)
+    var paragraph = document.getElementsByTagName("p");
+    for(var i = 0; i<paragraph.length; i++)
+    {        
+        // style paragraph according index 
+        paragraph[i].style.color="black";
+    }
 }
