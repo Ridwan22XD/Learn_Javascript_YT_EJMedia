@@ -291,25 +291,41 @@
 
 
 
+// getElemenstByClassName
 
+// function changeStyle()
+// {
+//     // call all class where name class = "parag"
+//     var paragr = document.getElementsByClassName("parag");
+//     for(var i = 0; i<paragr.length; i++)
+//     {
+//         // style paragraph according index 
+//         paragr[i].style.color="Blue";
+//     }
+// }
+
+// function reset()
+// {
+//     // call all class where name class = "parag"
+//     var paragr = document.getElementsByClassName("parag");
+//     for(var i = 0; i<paragr.length; i++)
+//     {        
+//         // style paragraph according index 
+//         paragr[i].style.color="black";
+//     }
+// }
+
+
+
+
+// Replace content using innerHtml
 function changeStyle()
 {
-    // call all class where name class = "parag"
-    var paragr = document.getElementsByClassName("parag");
-    for(var i = 0; i<paragr.length; i++)
+    // call all paragraph are className = parag 
+    var paragraph = document.getElementsByClassName("parag");
+    // Looping to create new paragraph 
+    for(var i = 0; i < paragraph.length; i++)
     {
-        // style paragraph according index 
-        paragr[i].style.color="Blue";
-    }
-}
-
-function reset()
-{
-    // call all class where name class = "parag"
-    var paragr = document.getElementsByClassName("parag");
-    for(var i = 0; i<paragr.length; i++)
-    {        
-        // style paragraph according index 
-        paragr[i].style.color="black";
+        var changeText = paragraph[i].innerHTML = "New paragraph " + (i+1);
     }
 }
