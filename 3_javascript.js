@@ -267,24 +267,49 @@
 
 
 
+// function changeStyle()
+// {
+//     // call all paragraph (<p>)
+//     var paragraph = document.getElementsByTagName("p");
+//     for(var i = 0; i<paragraph.length; i++)
+//     {
+//         // style paragraph according index 
+//         paragraph[i].style.color="Blue";
+//     }
+// }
+
+// function reset()
+// {
+//     // call all paragraph (<p>)
+//     var paragraph = document.getElementsByTagName("p");
+//     for(var i = 0; i<paragraph.length; i++)
+//     {        
+//         // style paragraph according index 
+//         paragraph[i].style.color="black";
+//     }
+// }
+
+
+
+
 function changeStyle()
 {
-    // call all paragraph (<p>)
-    var paragraph = document.getElementsByTagName("p");
-    for(var i = 0; i<paragraph.length; i++)
+    // call all class where name class = "parag"
+    var paragr = document.getElementsByClassName("parag");
+    for(var i = 0; i<paragr.length; i++)
     {
         // style paragraph according index 
-        paragraph[i].style.color="Blue";
+        paragr[i].style.color="Blue";
     }
 }
 
 function reset()
 {
-    // call all paragraph (<p>)
-    var paragraph = document.getElementsByTagName("p");
-    for(var i = 0; i<paragraph.length; i++)
+    // call all class where name class = "parag"
+    var paragr = document.getElementsByClassName("parag");
+    for(var i = 0; i<paragr.length; i++)
     {        
         // style paragraph according index 
-        paragraph[i].style.color="black";
+        paragr[i].style.color="black";
     }
 }
