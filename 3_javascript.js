@@ -247,19 +247,34 @@
 
 
 
-// Date Object 
-// call date according your date with time and timezone
-var todayDate = new Date(); 
-document.write(todayDate,"<br>");   // Wed Jan 29 2020 09:46:06 GMT+0700 (Western Indonesia Time)
+// // Date Object 
+// // call date according your date with time and timezone
+// var todayDate = new Date(); 
+// document.write(todayDate,"<br>");   // Wed Jan 29 2020 09:46:06 GMT+0700 (Western Indonesia Time)
 
-// call date according your date without time and timezone
-var usingString = todayDate.toDateString();
-document.write(usingString,"<br>"); // Wed Jan 29 2020
+// // call date according your date without time and timezone
+// var usingString = todayDate.toDateString();
+// document.write(usingString,"<br>"); // Wed Jan 29 2020
 
-// just call year according your year
-var getFullYear = todayDate.getFullYear();
-document.write(getFullYear,"<br>"); // 2020
+// // just call year according your year
+// var getFullYear = todayDate.getFullYear();
+// document.write(getFullYear,"<br>"); // 2020
 
-// set year as you want
-todayDate.setYear(2012);
-document.write(todayDate);  // Sun Jan 29 2012 10:02:14 GMT+0700 (Western Indonesia Time)
+// // set year as you want
+// todayDate.setYear(2012);
+// document.write(todayDate);  // Sun Jan 29 2012 10:02:14 GMT+0700 (Western Indonesia Time)
+
+
+
+
+function changeStyle()
+{
+    // call element according id (paragraf-1) and styling color text (blue)
+    var text = document.getElementById("paragraf-1").style.color="Blue";
+}
+
+function reset()
+{
+    // call element according id (paragraf-1) and styling color text (black)
+    var text = document.getElementById("paragraf-1").style.color="black";
+}
