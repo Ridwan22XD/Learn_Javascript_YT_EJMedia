@@ -25,9 +25,11 @@
     <div id="right">
         <h2>Right Content Area</h2>
         <p>This area will contain the right content area.
-        We will populate this area with links and text.</p>
-       
+        We will populate this area with links and text.</p>       
     </div>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
 
     <script src="jquery-3.4.1.slim.js"></script>
     <script>
@@ -35,9 +37,16 @@
         // $ -> call jquery function
         $(document).ready(function()
         {
-            // # -> id
-            // . -> class
-            $("#right, #center").hide();
+            $("#hide").click(function()
+            {
+                // # -> id
+                // . -> class
+                $("#right, #center").hide();
+            });
+            $("#show").click(function()
+            {
+                $("#right, #center").show();
+            });
         });
     </script>
 </body>
