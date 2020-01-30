@@ -538,39 +538,62 @@
 
 
 
-                // Confirmation 
-// Add and merge using innerHtml
-function change()
+//                 // Confirmation 
+// // Add and merge using innerHtml
+// function change()
+// {
+//     // Declare variabel Confirmation
+//     var Confirmation = confirm("Are you sure?");
+
+//     // Check confirm pop up
+//     // Choice
+//     // Ok => true
+//     // Cancel => false
+//     if(Confirmation == true)
+//     {
+//         // call all paragraph are className = parag 
+//         var paragr = document.getElementsByClassName("parag");
+
+//         // inisialisation variabel to merge variabel
+//         var firstText = paragr[0].innerHTML;
+//         var secondText = paragr[1].innerHTML;
+
+//         // create place and field with merge variabel
+//         var merge = paragr[3].innerHTML = firstText + " and " + secondText;
+
+//         // to set just print index 3
+//         paragr[0].innerHTML = " ";
+//         paragr[1].innerHTML = " ";
+//         paragr[2].innerHTML = " ";
+
+//         // Set button with id = "button" -> hidden
+//         var btn = document.getElementById("button").style.visibility = "hidden";
+
+//     }
+// }
+
+
+
+
+// More Objects
+// Function create object car with property (type, color, miles)
+function car(type, color, miles)
 {
-    // Declare variabel Confirmation
-    var Confirmation = confirm("Are you sure?");
+    // Declare some variabel according parameter
+    this.type = type;
+    this.color = color;
+    this.miles = miles;
+}
 
-    // Check confirm pop up
-    // Choice
-    // Ok => true
-    // Cancel => false
-    if(Confirmation == true)
-    {
-        // call all paragraph are className = parag 
-        var paragr = document.getElementsByClassName("parag");
+// Calling function to make object -> car1
+var car1 = new car("Compact", "Red", 2312);
 
-        // inisialisation variabel to merge variabel
-        var firstText = paragr[0].innerHTML;
-        var secondText = paragr[1].innerHTML;
-
-        // create place and field with merge variabel
-        var merge = paragr[3].innerHTML = firstText + " and " + secondText;
-
-        // to set just print index 3
-        paragr[0].innerHTML = " ";
-        paragr[1].innerHTML = " ";
-        paragr[2].innerHTML = " ";
-
-        // Set button with id = "button" -> hidden
-        var btn = document.getElementById("button").style.visibility = "hidden";
-
-    }
-
+// Function onclick button
+function show()
+{
+    // Print data from javascript to HTML
+    document.getElementById("p").innerHTML = "Car " + car1.type + " Color " + car1.color + " miles " + car1.miles;
     
-    
+    // Make button with id = "btn" hidden
+    document.getElementById("btn").style.visibility = "hidden";
 }
