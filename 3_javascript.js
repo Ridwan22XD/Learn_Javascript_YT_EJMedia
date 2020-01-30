@@ -383,62 +383,154 @@
 // }
 
 
-// Create a new element 
-function newStory()
+// // Create a new element 
+// function newStory()
+// {
+//                 // Heading 
+
+//     // Create variabel (element) -> paragraph (<h2>)
+//     var elementH = document.createElement("h2");
+
+//     // Create variabel (main)
+//     // Set variabel (main) according id (main)
+//     var main = document.getElementById("main");
+
+//     // Put in variabel -> elementH inside child variabel -> main
+//     main.appendChild(elementH);
+
+//     // Create node for textH
+//     // Set text with string -> "Apollo :: Greek God of the Sun and Light"
+//     var textH = document.createTextNode("Apollo :: Greek God of the Sun and Light");
+
+//     // Put in variabel -> textH inside child variabel -> elementH 
+//     elementH.appendChild(textH);
+//                 // Paragraph
+
+//     // Create variabel (element) -> paragraph (<p>)
+//     var element = document.createElement("p");
+
+//     // Put in variabel -> element inside child variabel -> main
+//     main.appendChild(element);
+
+//     // Create node for text 
+//     // Set text with string -> "Test"
+//     var text = document.createTextNode("Apollo is the Olympian god of the sun and light, music and poetry, healing and plagues, prophecy and knowledge, order and beauty, archery and agriculture. An embodiment of the Hellenic ideal of kalokagathia, he is harmony, reason and moderation personified, a perfect blend of physical superiority and moral virtue. A complex deity who turns up in art and literature possibly as often as Zeus himself, Apollo is the only major god who appears with the same name in both Greek and Roman mythology.");
+
+//     // Put in variabel -> text inside child variabel -> element 
+//     element.appendChild(text);
+
+//     // Skema
+//     // div  ->  h2  ->  p       ->  text
+//     // main ---------> element  ->  test  
+// }
+
+// function hideStory()
+// {
+//     // Create variabel -> elementH
+//     // Find element by tag <h2> and index 2(index begin from 0)
+//     var elementH = document.getElementsByTagName("h2")[2];
+
+//     // Create variabel -> parent
+//     //  Variabel parent is parent from elementH  
+//     var parent = elementH.parentNode;
+    
+//     // Remove child from parent -> elementH 
+//     parent.removeChild(elementH);
+
+//     // Create variabel -> elementP
+//     // Find element by tag <p> and index 4(index begin from 0)
+//     var elementP = document.getElementsByTagName("p")[4];
+//     parent.removeChild(elementP)
+// }
+
+
+
+
+                // Traversing DOM
+// Parent to child
+function changeParagraph()
 {
-                // Heading 
+    // Declare Variabel parent 
+    // filled variabel parent according element with id = "main" 
+    var parent = document.getElementById("main");
 
-    // Create variabel (element) -> paragraph (<h2>)
-    var elementH = document.createElement("h2");
+    // Declare variabel child 
+    // Filled variabel child according last element child from variabel parent 
+    var child = parent.lastElementChild;
 
-    // Create variabel (main)
-    // Set variabel (main) according id (main)
-    var main = document.getElementById("main");
+    // coloring blue variabel child 
+    child.style.color = "blue";
+}
+// Child to parent
+function changeAllParagraph()
+{
+    // Declare variabel child 
+    // Filled variabel child according element with id = "p1"
+    var child = document.getElementById("p1");
 
-    // Put in variabel -> elementH inside child variabel -> main
-    main.appendChild(elementH);
+    // Declare variabel parent 
+    // Filled variabel parent according parent Element from variabel child
+    var parent = child.parentElement;
 
-    // Create node for textH
-    // Set text with string -> "Apollo :: Greek God of the Sun and Light"
-    var textH = document.createTextNode("Apollo :: Greek God of the Sun and Light");
+    // Coloring red variabel parent
+    parent.style.color = "red";
+}
+// Between sibling element
+function betweenSibling()
+{
+    // Declare variabel paragraph1
+    // Filled variabel paragraph1 according element with id = "p1"
+    var paragraph1 = document.getElementById("p1");
 
-    // Put in variabel -> textH inside child variabel -> elementH 
-    elementH.appendChild(textH);
-                // Paragraph
+    // Declare variabel sibling 
+    // Filled variabel sibling according next element sibling from variabel paragraph1
+    var sibling = paragraph1.nextElementSibling;
 
-    // Create variabel (element) -> paragraph (<p>)
-    var element = document.createElement("p");
-
-    // Put in variabel -> element inside child variabel -> main
-    main.appendChild(element);
-
-    // Create node for text 
-    // Set text with string -> "Test"
-    var text = document.createTextNode("Apollo is the Olympian god of the sun and light, music and poetry, healing and plagues, prophecy and knowledge, order and beauty, archery and agriculture. An embodiment of the Hellenic ideal of kalokagathia, he is harmony, reason and moderation personified, a perfect blend of physical superiority and moral virtue. A complex deity who turns up in art and literature possibly as often as Zeus himself, Apollo is the only major god who appears with the same name in both Greek and Roman mythology.");
-
-    // Put in variabel -> text inside child variabel -> element 
-    element.appendChild(text);
-
-    // Skema
-    // div  ->  h2  ->  p       ->  text
-    // main ---------> element  ->  test  
+    // Coloring yellow sibling
+    sibling.style.color = "yellow";
 }
 
-function hideStory()
+
+function reset()
 {
-    // Create variabel -> elementH
-    // Find element by tag <h2> and index 2(index begin from 0)
-    var elementH = document.getElementsByTagName("h2")[2];
+                // Reset Style All Element
+    // Declare variabel child 
+    // Filled variabel child according Element with id = "p1"
+    var child = document.getElementById("p1");
 
-    // Create variabel -> parent
-    //  Variabel parent is parent from elementH  
-    var parent = elementH.parentNode;
-    
-    // Remove child from parent -> elementH 
-    parent.removeChild(elementH);
+    // Declare variabel parent
+    // Filled variabel parent according parent element from variabel child
+    var parent = child.parentElement;
 
-    // Create variabel -> elementP
-    // Find element by tag <p> and index 4(index begin from 0)
-    var elementP = document.getElementsByTagName("p")[4];
-    parent.removeChild(elementP)
+    // Coloring Black element
+    parent.style.color = "Black";
+
+                // Reset Style Last paragraph
+    // Declare variabel parent
+    // Filled variabel parent according element with id = "main"
+    var parent = document.getElementById("main");
+
+    // Decalare variabel child
+    // Filled variabel child according last element child from variabel parent
+    var child = parent.lastElementChild;
+
+    // Coloring black child
+    child.style.color = "black";
+
+    // Declare variabel paragraph1
+    // Filled variabel paragraph1 according element with id = "p1"
+    var paragraph1 = document.getElementById("p1");
+
+    // Declare variabel sibling 
+    // Filled variabel sibling according next element sibling from variabel paragraph1
+    var sibling = paragraph1.nextElementSibling;
+
+    // Coloring black sibling
+    sibling.style.color = "black";
+
+    // Delete variabel (child, parent, paragraph1, sibling)
+    delete(child);
+    delete(parent);
+    delete(paragraph1);
+    delete(sibling);
 }
