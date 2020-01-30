@@ -48,8 +48,8 @@
     </div>
 
     <div id="btn">
-        <button id="hide">Hide</button>
-        <button id="show">Show</button>
+        <button id="hide">Change</button>
+        <button id="show">Reset</button>
     </div>
     
     <script src="jquery-3.4.1.slim.js"></script>
@@ -96,6 +96,16 @@
                 // // Hidden all div except div with id = "btn"
                 // $("div:not(#btn)").hide();
 
+                                    // CSS Method
+                // // Single
+                // $("#center").css("color", "red");
+
+                // // Multiple
+                // $("#center").css({
+                //     "border"    : "solid 2px red",
+                //     "color"     : "blue"
+                // });
+
             });
             $("#show").click(function()
             {
@@ -130,6 +140,16 @@
                 //                 // Selector except elemen
                 // // Show all div except div with id = "btn"
                 // $("div:not(#btn)").show();
+
+                                    // CSS Method
+                // // Single
+                // $("#center").css("color", "black");
+
+                // // Multiple
+                // $("#center").css({
+                //     "border"    : "solid 2px black",
+                //     "color"     : "black"
+                // });
 
             });
         });
