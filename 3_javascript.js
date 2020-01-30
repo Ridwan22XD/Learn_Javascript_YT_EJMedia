@@ -575,25 +575,34 @@
 
 
 
-// More Objects
-// Function create object car with property (type, color, miles)
-function car(type, color, miles)
-{
-    // Declare some variabel according parameter
-    this.type = type;
-    this.color = color;
-    this.miles = miles;
-}
+// // More Objects
+// // Function create object car with property (type, color, miles)
+// function car(type, color, miles)
+// {
+//     // Declare some variabel according parameter
+//     this.type = type;
+//     this.color = color;
+//     this.miles = miles;
+// }
 
-// Calling function to make object -> car1
-var car1 = new car("Compact", "Red", 2312);
+// // Calling function to make object -> car1
+// var car1 = new car("Compact", "Red", 2312);
 
-// Function onclick button
-function show()
-{
-    // Print data from javascript to HTML
-    document.getElementById("p").innerHTML = "Car " + car1.type + " Color " + car1.color + " miles " + car1.miles;
+// // Function onclick button
+// function show()
+// {
+//     // Print data from javascript to HTML
+//     document.getElementById("p").innerHTML = "Car " + car1.type + " Color " + car1.color + " miles " + car1.miles;
     
-    // Make button with id = "btn" hidden
-    document.getElementById("btn").style.visibility = "hidden";
+//     // Make button with id = "btn" hidden
+//     document.getElementById("btn").style.visibility = "hidden";
+// }
+
+
+
+
+// Move page using window object
+function move()
+{
+    window.location = "form/form.html";
 }
