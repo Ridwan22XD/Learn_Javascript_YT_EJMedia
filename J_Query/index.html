@@ -12,25 +12,46 @@
 <body>
     <div id="left">
         <h2>Left Content Area</h2>
-        <p>This area will contain the left content area.  
-        We will populate this area with images and text. </p>
+        <p>Left p1 <b>left</b> p1 left p1 left p1</p>
+        <p>Left p2 left p2 left p2 left p2</p>
+        <ul>
+            <li>left 1</li>
+            <li>left 2</li>
+            <li>left 3</li>
+            <li></li>
+        </ul>
     </div>
 
     <div id="center">
         <h2>Center Content Area</h2>
-        <p>This area will contain the center content area.  
-        This area will contain the main articles. </p>
+        <p>Center p1 center p1 center p1 center p1</p>
+        <p>Center p2 <b>Center</b> p2 center p2 center p2</p>
+        <ul>
+            <li>center 1</li>
+            <li>center 2</li>
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 
     <div id="right">
-        <h2>Right Content Area</h2>
-        <p>This area will contain the right content area.
-        We will populate this area with links and text.</p>       
+        <h2>Right <b>Content</b> Area</h2>
+        <p>Right p1 right p1 right p1 right p1</p>
+        <p>Right p2 right p2 right p2 right p2</p> 
+        <ul>
+            <li>Right 1</li>
+            <li>Right 2</li>
+            <li>Right 3</li>
+            <li></li>
+            <li></li>
+        </ul>  
     </div>
 
-    <button id="hide">Hide</button>
-    <button id="show">Show</button>
-
+    <div id="btn">
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </div>
+    
     <script src="jquery-3.4.1.slim.js"></script>
     <script>
         // ready -> wait until page load finished
@@ -39,13 +60,74 @@
         {
             $("#hide").click(function()
             {
-                // # -> id
-                // . -> class
-                $("#right, #center").hide();
+                // // #     -> id
+                // // .     -> class
+                // // ("")  -> selector
+                // // Hidden according id = "right" and "center"
+                // $("#right, #center").hide();
+
+
+                //                 // Selector pick element
+                // Selector -> https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+                // // Hidden paragraph 1 from div with id = "right"
+                // $("#right p:first").hide();
+
+                // // Hidden div with index even (even %2 == 0)
+                // $("div:even").hide();
+
+                // // Hidden all paragraph are contains with text = "p1"
+                // // inside contains() must ''
+                // $("p:contains('p1')").hide();
+
+                // // Hidden all paragraph are have bold atribut <b>
+                // $("p:has(b)").hide();
+
+                // // Hidden ul li queue 2 in div queue 1 (queue begin from 1 not like index)
+                // ul li:nth-child(2) -> child from li queue second  
+                // $("div:first ul li:nth-child(2)").hide();
+
+                // // Hidden al li who didn't have value
+                // $("li:empty").hide();
+
+                // 
+                $("body div:nth-child(2)").hide();
+
+                //                 // Selector except elemen
+                // // Hidden all div except div with id = "btn"
+                // $("div:not(#btn)").hide();
+
             });
             $("#show").click(function()
             {
-                $("#right, #center").show();
+                // // Show according id = "right" and "center"
+                // $("#right, #center").show();
+
+                //                 // Selector pick element
+                // Selector -> https://www.w3schools.com/jquery/jquery_ref_selectors.asp
+                // // Show paragraph 1 from div with id = "right"
+                // $("#right p:first").show();
+
+                // // Show div with index even (even %2 == 0)
+                // $("div:even").show(); 
+
+                // // Show all paragraph are contains with text = "p1"
+                // // inside contains() must ''
+                // $("p:contains('p1')").show();
+
+                // // Hidden all paragraph are have bold atribut <b>
+                // $("p:has(b)").show();
+
+                // // Show ul li queue 2 in div queue 1 (queue begin from 1 not like index)
+                // ul li:nth-child(2) -> child from li queue second 
+                // $("div:first ul li:nth-child(2)").show();
+
+                // // Show al li who didn't have value
+                // $("li:empty").show();
+
+                //                 // Selector except elemen
+                // // Show all div except div with id = "btn"
+                // $("div:not(#btn)").show();
+
             });
         });
     </script>
