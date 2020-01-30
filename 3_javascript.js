@@ -446,91 +446,131 @@
 
 
 
-                // Traversing DOM
-// Parent to child
-function changeParagraph()
+//                 // Traversing DOM
+// // Parent to child
+// function changeParagraph()
+// {
+//     // Declare Variabel parent 
+//     // filled variabel parent according element with id = "main" 
+//     var parent = document.getElementById("main");
+
+//     // Declare variabel child 
+//     // Filled variabel child according last element child from variabel parent 
+//     var child = parent.lastElementChild;
+
+//     // coloring blue variabel child 
+//     child.style.color = "blue";
+// }
+// // Child to parent
+// function changeAllParagraph()
+// {
+//     // Declare variabel child 
+//     // Filled variabel child according element with id = "p1"
+//     var child = document.getElementById("p1");
+
+//     // Declare variabel parent 
+//     // Filled variabel parent according parent Element from variabel child
+//     var parent = child.parentElement;
+
+//     // Coloring red variabel parent
+//     parent.style.color = "red";
+// }
+// // Between sibling element
+// function betweenSibling()
+// {
+//     // Declare variabel paragraph1
+//     // Filled variabel paragraph1 according element with id = "p1"
+//     var paragraph1 = document.getElementById("p1");
+
+//     // Declare variabel sibling 
+//     // Filled variabel sibling according next element sibling from variabel paragraph1
+//     var sibling = paragraph1.nextElementSibling;
+
+//     // Coloring yellow sibling
+//     sibling.style.color = "yellow";
+// }
+
+
+// function reset()
+// {
+//                 // Reset Style All Element
+//     // Declare variabel child 
+//     // Filled variabel child according Element with id = "p1"
+//     var child = document.getElementById("p1");
+
+//     // Declare variabel parent
+//     // Filled variabel parent according parent element from variabel child
+//     var parent = child.parentElement;
+
+//     // Coloring Black element
+//     parent.style.color = "Black";
+
+//                 // Reset Style Last paragraph
+//     // Declare variabel parent
+//     // Filled variabel parent according element with id = "main"
+//     var parent = document.getElementById("main");
+
+//     // Decalare variabel child
+//     // Filled variabel child according last element child from variabel parent
+//     var child = parent.lastElementChild;
+
+//     // Coloring black child
+//     child.style.color = "black";
+
+//     // Declare variabel paragraph1
+//     // Filled variabel paragraph1 according element with id = "p1"
+//     var paragraph1 = document.getElementById("p1");
+
+//     // Declare variabel sibling 
+//     // Filled variabel sibling according next element sibling from variabel paragraph1
+//     var sibling = paragraph1.nextElementSibling;
+
+//     // Coloring black sibling
+//     sibling.style.color = "black";
+
+//     // Delete variabel (child, parent, paragraph1, sibling)
+//     delete(child);
+//     delete(parent);
+//     delete(paragraph1);
+//     delete(sibling);
+// }
+
+
+
+
+                // Confirmation 
+// Add and merge using innerHtml
+function change()
 {
-    // Declare Variabel parent 
-    // filled variabel parent according element with id = "main" 
-    var parent = document.getElementById("main");
+    // Declare variabel Confirmation
+    var Confirmation = confirm("Are you sure?");
 
-    // Declare variabel child 
-    // Filled variabel child according last element child from variabel parent 
-    var child = parent.lastElementChild;
+    // Check confirm pop up
+    // Choice
+    // Ok => true
+    // Cancel => false
+    if(Confirmation == true)
+    {
+        // call all paragraph are className = parag 
+        var paragr = document.getElementsByClassName("parag");
 
-    // coloring blue variabel child 
-    child.style.color = "blue";
-}
-// Child to parent
-function changeAllParagraph()
-{
-    // Declare variabel child 
-    // Filled variabel child according element with id = "p1"
-    var child = document.getElementById("p1");
+        // inisialisation variabel to merge variabel
+        var firstText = paragr[0].innerHTML;
+        var secondText = paragr[1].innerHTML;
 
-    // Declare variabel parent 
-    // Filled variabel parent according parent Element from variabel child
-    var parent = child.parentElement;
+        // create place and field with merge variabel
+        var merge = paragr[3].innerHTML = firstText + " and " + secondText;
 
-    // Coloring red variabel parent
-    parent.style.color = "red";
-}
-// Between sibling element
-function betweenSibling()
-{
-    // Declare variabel paragraph1
-    // Filled variabel paragraph1 according element with id = "p1"
-    var paragraph1 = document.getElementById("p1");
+        // to set just print index 3
+        paragr[0].innerHTML = " ";
+        paragr[1].innerHTML = " ";
+        paragr[2].innerHTML = " ";
 
-    // Declare variabel sibling 
-    // Filled variabel sibling according next element sibling from variabel paragraph1
-    var sibling = paragraph1.nextElementSibling;
+        // Set button with id = "button" -> hidden
+        var btn = document.getElementById("button").style.visibility = "hidden";
 
-    // Coloring yellow sibling
-    sibling.style.color = "yellow";
-}
+    }
 
-
-function reset()
-{
-                // Reset Style All Element
-    // Declare variabel child 
-    // Filled variabel child according Element with id = "p1"
-    var child = document.getElementById("p1");
-
-    // Declare variabel parent
-    // Filled variabel parent according parent element from variabel child
-    var parent = child.parentElement;
-
-    // Coloring Black element
-    parent.style.color = "Black";
-
-                // Reset Style Last paragraph
-    // Declare variabel parent
-    // Filled variabel parent according element with id = "main"
-    var parent = document.getElementById("main");
-
-    // Decalare variabel child
-    // Filled variabel child according last element child from variabel parent
-    var child = parent.lastElementChild;
-
-    // Coloring black child
-    child.style.color = "black";
-
-    // Declare variabel paragraph1
-    // Filled variabel paragraph1 according element with id = "p1"
-    var paragraph1 = document.getElementById("p1");
-
-    // Declare variabel sibling 
-    // Filled variabel sibling according next element sibling from variabel paragraph1
-    var sibling = paragraph1.nextElementSibling;
-
-    // Coloring black sibling
-    sibling.style.color = "black";
-
-    // Delete variabel (child, parent, paragraph1, sibling)
-    delete(child);
-    delete(parent);
-    delete(paragraph1);
-    delete(sibling);
+    
+    
 }
