@@ -372,12 +372,73 @@
 
 
 
-// Mouseover
-function changeImage()
+// // Mouseover
+// function changeImage()
+// {
+//     document.getElementById("image").src = "images/MBP-Pink.jpeg";
+// }
+// function defaultImage()
+// {
+//     document.getElementById("image").src = "images/MBP-Gold.jpeg";
+// }
+
+
+// Create a new element 
+function newStory()
 {
-    document.getElementById("image").src = "images/MBP-Pink.jpeg";
+                // Heading 
+
+    // Create variabel (element) -> paragraph (<h2>)
+    var elementH = document.createElement("h2");
+
+    // Create variabel (main)
+    // Set variabel (main) according id (main)
+    var main = document.getElementById("main");
+
+    // Put in variabel -> elementH inside child variabel -> main
+    main.appendChild(elementH);
+
+    // Create node for textH
+    // Set text with string -> "Apollo :: Greek God of the Sun and Light"
+    var textH = document.createTextNode("Apollo :: Greek God of the Sun and Light");
+
+    // Put in variabel -> textH inside child variabel -> elementH 
+    elementH.appendChild(textH);
+                // Paragraph
+
+    // Create variabel (element) -> paragraph (<p>)
+    var element = document.createElement("p");
+
+    // Put in variabel -> element inside child variabel -> main
+    main.appendChild(element);
+
+    // Create node for text 
+    // Set text with string -> "Test"
+    var text = document.createTextNode("Apollo is the Olympian god of the sun and light, music and poetry, healing and plagues, prophecy and knowledge, order and beauty, archery and agriculture. An embodiment of the Hellenic ideal of kalokagathia, he is harmony, reason and moderation personified, a perfect blend of physical superiority and moral virtue. A complex deity who turns up in art and literature possibly as often as Zeus himself, Apollo is the only major god who appears with the same name in both Greek and Roman mythology.");
+
+    // Put in variabel -> text inside child variabel -> element 
+    element.appendChild(text);
+
+    // Skema
+    // div  ->  h2  ->  p       ->  text
+    // main ---------> element  ->  test  
 }
-function defaultImage()
+
+function hideStory()
 {
-    document.getElementById("image").src = "images/MBP-Gold.jpeg";
+    // Create variabel -> elementH
+    // Find element by tag <h2> and index 2(index begin from 0)
+    var elementH = document.getElementsByTagName("h2")[2];
+
+    // Create variabel -> parent
+    //  Variabel parent is parent from elementH  
+    var parent = elementH.parentNode;
+    
+    // Remove child from parent -> elementH 
+    parent.removeChild(elementH);
+
+    // Create variabel -> elementP
+    // Find element by tag <p> and index 4(index begin from 0)
+    var elementP = document.getElementsByTagName("p")[4];
+    parent.removeChild(elementP)
 }
