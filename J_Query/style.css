@@ -22,5 +22,14 @@
     float: left;
     background: #f0efef;
     border: solid 2px black;
+}
 
+.firstParagraph
+{
+    background-color: aqua;
+}
+
+.lastParagraph
+{
+    background-color: burlywood;
 }

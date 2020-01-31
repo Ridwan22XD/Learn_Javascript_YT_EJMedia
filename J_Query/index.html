@@ -12,7 +12,7 @@
 <body>
     <div id="left">
         <h2>Left Content Area</h2>
-        <p>Left p1 <b>left</b> p1 left p1 left p1</p>
+        <p class="firstParagraph" >Left p1 <b>left</b> p1 left p1 left p1</p>
         <p>Left p2 left p2 left p2 left p2</p>
         <ul>
             <li>left 1</li>
@@ -123,7 +123,17 @@
 
                                         // Chaining Methods
                 // Setting css color = red and border = solid 2px blue
-                $("#left").css("color", "red").css("border", "solid 2px blue");
+                // $("#left").css("color", "red").css("border", "solid 2px blue");
+                // *******************************************************************************
+
+                
+                                    // Add and Remove classes
+                // Find the first paragraph and remove class that paragraph
+                $("p:first").removeClass();
+ 
+                // Find the last paragraph and add class that paragraph -> "lastParagraph"
+                $("p:last").addClass("lastParagraph");
+                // *******************************************************************************
 
             });
             $("#show").click(function()
@@ -178,6 +188,13 @@
                 // html() -> treats the content as HTML
                 // text() -> treats the content as text
                 
+                                    // Add and Remove classes
+                // Find the last paragraph and remove class that paragraph
+                $("p:last").removeClass();
+ 
+                // Find the first paragraph and add class that paragraph -> "firstParagraph"
+                $("p:first").addClass("firstParagraph");
+                // *******************************************************************************
 
             });
         });
